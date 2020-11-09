@@ -1,0 +1,9 @@
+.badge {
+  background-color: tomato;
+  width: 20px;
+  height: 20px;
+  display: block; /*해줘야함. 왜냐? span은 width와 height가 없기 때문이다. */
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}

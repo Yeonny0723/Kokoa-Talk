@@ -1,0 +1,21 @@
+#no-mobile {
+  position: absolute;
+  z-index: 10; /* 최대한 크게 안겹치도록 */
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  display: flex;
+  top: 0;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+}
+#no-mobile i {
+  margin: 0 50px;
+}
+/* 730px보다 크면 display:flex;,작으면 (no-mobile을) display:none; */
+@media screen and (max-width: 730px) {
+  #no-mobile {
+    display: none;
+  }
+}

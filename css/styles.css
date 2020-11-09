@@ -1,0 +1,46 @@
+/* import하는 순서도 굉장히 중요해용~ */
+
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;600&display=swap");
+@import "reset.css";
+@import "variable.css";
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screenheader.css";
+@import "components/usercomponent.css";
+@import "components/badge.css";
+@import "components/reddot.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+/* Screens */
+@import "screens/friends.css";
+@import "screens/login.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+/* 모든 스크린에 적용될 수 있는 스타일은 styles.css에 적기 */
+body {
+  font-family: "Sansita Swashed", cursive;
+  color: #2e363e;
+  background-color: #f8cacb;
+}
+body .main-screen {
+  padding-top: 15vh;
+}
+
+img,
+i {
+  cursor: pointer;
+}
+.status-bar i {
+  cursor: auto;
+}
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+i {
+  color: rgba(0, 0, 0, 0.7);
+}

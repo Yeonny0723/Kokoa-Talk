@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More-on Kokoa Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <!-- screenbar만들기 -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">More</h1>
+      <div class="screen-header__icons">
+        <!-- span은 가로로 나열되니까, 아이콘이지만 편의상 span으로! -->
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span>
+          <a class="settings-link" href="settings.html">
+            <i class="fas fa-cog fa-lg"></i>
+            <div class="reddot-setting reddot"></div>
+          </a>
+        </span>
+      </div>
+    </header>
+<!-- styles.css에서 main-screen에 margin var을 주어서 여기서도 적용되도록 이 class를 쓴다 -->
+    <main class="main-screen more-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+              <img
+                class="user-component__avatar user-component__avatar--xl"
+                src="screenshots/me.png"
+              />
+              <div class="user-component__text">
+                <h4 class="user-component__title">Juyeon</h4>
+                <h6 class="user-component__subtitle">+82 010-0723-7979<i class="fas fa-exclamation-circle"></i></h6>
+              </div>
+            </div>
+            <div class="user-component__column">
+                <i class="far fa-comment-alt fa-2x"></i>
+            </div>
+          </div>
+          <div class="icon-row">
+            <div class="icon-row__icon"><i class="far fa-calendar"></i><span>Calendar</span></div>
+            <div class="icon-row__icon"><i class="fab fa-google-drive"></i><span>Talk Drive</span></div>
+            <div class="icon-row__icon"><i class="far fa-smile-wink"></i><span>Emoticons</span></div>
+            <div class="icon-row__icon"><i class="fas fa-brush"></i><span>Themes</span></div>
+            <div class="icon-row__icon"><i class="fas fa-file-invoice"></i><span>Account</span></div>
+            <div class="icon-row__icon"><i class="far fa-comments"></i><span>Openchat</span></div>
+         </div>
+         <div class="more-suggestions">
+             <h4 class="more-suggestions__title">Suggestions</h4>
+             <div class="more-suggetions__icons">
+                 <div class="more-suggestions__icon">
+                     <img src="screenshots/kakaostory.png"/>
+                     <span class="more-suggestions__icon-text">Kakao Story</span>
+                 </div>
+                 <div class="more-suggestions__icon">
+                    <img src="screenshots/kakao-friends.png"/>
+                    <span class="more-suggestions__icon-text">Kakao friends</span>
+                </div>
+                <div class="more-suggestions__icon">
+                    <img src="screenshots/kakao-games.png"/>
+                    <span class="more-suggestions__icon-text">Friends Gem</span>
+                </div>
+             </div>
+         </div>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <!-- <a>여기에 fontawesome에서 얻은 사진 넣으면 끝</a> -->
+        <!-- charts에 있을때에는 검게 칠해진 아이콘으로 바뀌어야함 -->
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="far fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="nav__reddot reddot"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div id="no-mobile">
+      <span><i class="fas fa-arrow-right"></i>Your screen is too big ㅠㅠ pls make it smaller!<i class="fas fa-arrow-left"></i></span>
+    </div>
+    
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+#friends-display-link {
+  display: block;
+  text-align: center;
+  background-color: #fafafa;
+  padding: 15px 0;
+  font-size: 18px;
+  margin-bottom: 25px;
+  background-color: rgba(238, 142, 146, 0.2);
+}
+
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+.friends-screen__channel-header {
+  margin: 10px var(--horizontal-space);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.3);
+}
+/* friends.html의 channel 숫자 2가 회색이 되어야 하는데, 다른 스크린에도 같은 위치에 회색 숫자가 필요할 경우가 있으므로 */
+.user-component__column-random > i,
+.friends-screen__channel-header > i {
+  color: rgba(0, 0, 0, 0.3);
+}
+/* i want to put element below on the top of friends screen */
+@keyframes hidesplashscreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 130px;
+  animation: hidesplashscreen 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+  z-index: 5;
+}
+
+body {
+  height: 120vh;
+}
